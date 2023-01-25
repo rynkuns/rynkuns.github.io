@@ -1,0 +1,48 @@
+
+
+body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+#intro {
+height: 100vh;
+width: 100%;
+
+background-image: url(intro_back.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.intro-pic {
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.intro-name {
+    text-align: center;
+}
+
+
+
+.footer {
+    --footer-height: 150px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+    line-height: var(--footer-height); /* Vertical center */
+
+    background: rgb(6,0,22);
+    background: linear-gradient(0deg, rgba(6,0,22,1) 10%, rgba(48,16,33,0.675490264465161) 50%, rgba(255,255,255,0) 100%); /* https://cssgradient.io/ */
+
+    font-size: 2em;
+    color: white;
+}
+
+.footer .container {
+    width: 400px;
+}
