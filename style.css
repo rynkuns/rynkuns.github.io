@@ -1,8 +1,17 @@
 
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+
 body {
     margin-bottom: 60px; /* Margin bottom by footer height */
 }
+
+:root {
+    --intro-element-size: 500px;
+}
+
 
 #intro {
 height: 100vh;
@@ -15,14 +24,22 @@ background-size: cover;
 position: relative;
 }
 
-.intro-pic {
-    border-width: 2px;
-    border-color: gray;
-    border-style: solid;
+.intro-img {
+    height: var(--intro-element-size);
+    width: var(--intro-element-size);
+
+    display: block;
+    margin: auto;
 }
 
 .intro-name {
     text-align: center;
+    vertical-align: middle;
+    font-family: 'Unica One', cursive;
+    font-size: 7em;
+    height: var(--intro-element-size);
+    padding: 70px 0;
+    
 }
 
 
