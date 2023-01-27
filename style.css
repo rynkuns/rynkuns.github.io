@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-    --intro-element-size: 420px;
+    --intro-element-size: 44vh;
 }
 
 a {
@@ -46,7 +46,7 @@ position: relative;
     vertical-align: middle;
 
     font-family: 'Unica One', cursive;
-    font-size: 7em;
+    font-size: 6em;
     text-shadow: 4px 0px rgb(146, 43, 84);
 
     height: var(--intro-element-size);
