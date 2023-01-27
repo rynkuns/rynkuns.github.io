@@ -9,9 +9,18 @@ body {
 }
 
 :root {
-    --intro-element-size: 500px;
+    --intro-element-size: 420px;
 }
 
+a {
+    color: rgb(162, 194, 187) !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: rgb(146, 43, 84) !important;
+    transition: color 0.3s;
+}
 
 #intro {
 height: 100vh;
@@ -35,29 +44,45 @@ position: relative;
 .intro-name {
     text-align: center;
     vertical-align: middle;
+
     font-family: 'Unica One', cursive;
     font-size: 7em;
+    text-shadow: 4px 0px rgb(146, 43, 84);
+
     height: var(--intro-element-size);
     padding: 70px 0;
     
 }
 
+#projects-container {
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 
+    width: 100%;
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    padding-inline: 12%;
+
+    background-color: rgb(25, 26, 25);
+    color: lightgray;
+}
 
 .footer {
     --footer-height: 150px;
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: var(--footer-height);
     line-height: var(--footer-height); /* Vertical center */
 
     background: rgb(6,0,22);
-    background: linear-gradient(0deg, rgba(6,0,22,1) 10%, rgba(48,16,33,0.675490264465161) 50%, rgba(255,255,255,0) 100%); /* https://cssgradient.io/ */
+    background: linear-gradient(0deg, rgba(6,0,22,1) 10%, rgba(15, 29, 24, 0.562) 50%, rgba(255,255,255,0) 100%); /* https://cssgradient.io/ */
 
     font-size: 2em;
-    color: white;
+    color: lightgray;
 }
 
 .footer .container {
