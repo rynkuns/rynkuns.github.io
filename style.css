@@ -47,7 +47,7 @@ position: relative;
 
     font-family: 'Unica One', cursive;
     font-size: 6em;
-    text-shadow: 4px 0px rgb(146, 43, 84);
+    text-shadow: 3px 0px rgb(146, 43, 84);
 
     height: var(--intro-element-size);
     padding: 70px 0;
