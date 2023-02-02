@@ -5,11 +5,11 @@
 
 
 body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
+    margin-bottom: 130px; /* Margin bottom by footer height */
 }
 
 :root {
-    --intro-element-size: 44vh;
+    --intro-element-size: 45vmin;
 }
 
 a {
@@ -31,6 +31,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
+background-attachment: fixed;
 }
 
 .intro-img {
@@ -46,7 +47,7 @@ position: relative;
     vertical-align: middle;
 
     font-family: 'Unica One', cursive;
-    font-size: 6em;
+    font-size: 11vmin;
     text-shadow: 3px 0px rgb(146, 43, 84);
 
     height: var(--intro-element-size);
