@@ -82,7 +82,7 @@ background-attachment: fixed;
     height: var(--bar-height);
     line-height: var(--bar-height); /* Vertical center */
 
-    font-size: 2em;
+    font-size: min(2em, 6vw);
     color: lightgray;
 
     background-image: linear-gradient(0deg, rgba(255,255,255,0) 30%, rgba(15, 29, 24, 0.562) 70%, rgba(0, 22, 17, 0.664) 100%), url(intro_back.jpg);
