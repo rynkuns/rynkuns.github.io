@@ -5,7 +5,7 @@
 
 
 body {
-    margin-bottom: 130px; /* Margin bottom by footer height */
+    /* margin-bottom: 130px; Margin bottom by footer height */
 }
 
 :root {
@@ -25,12 +25,12 @@ a:hover {
 #intro {
 height: 100vh;
 width: 100%;
+position: relative;
 
 background-image: url(intro_back.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-position: relative;
 background-attachment: fixed;
 }
 
@@ -55,7 +55,7 @@ background-attachment: fixed;
     
 }
 
-#projects-container {
+#projects {
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -70,22 +70,29 @@ background-attachment: fixed;
     color: lightgray;
 }
 
-.footer {
-    --footer-height: 130px;
+.bar-topspace {
+    padding-top: 125px !important;
+}
 
-    position: fixed;
-    bottom: 0;
+.bar {
+    --bar-height: 100px;
+    margin-top: -100px;
+
     width: 100%;
-    height: var(--footer-height);
-    line-height: var(--footer-height); /* Vertical center */
-
-    background: rgb(6,0,22);
-    background: linear-gradient(0deg, rgba(6,0,22,1) 10%, rgba(15, 29, 24, 0.562) 50%, rgba(255,255,255,0) 100%); /* https://cssgradient.io/ */
+    height: var(--bar-height);
+    line-height: var(--bar-height); /* Vertical center */
 
     font-size: 2em;
     color: lightgray;
+
+    background-image: linear-gradient(0deg, rgba(255,255,255,0) 30%, rgba(15, 29, 24, 0.562) 70%, rgba(0, 22, 17, 0.664) 100%), url(intro_back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.footer .container {
-    width: 500px;
+.bar .container {
+    max-width: 600px;
+    width: 75%;
 }
